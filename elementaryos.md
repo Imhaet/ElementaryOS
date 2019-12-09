@@ -59,8 +59,8 @@ sudo apt-get update
 sudo apt-get install elementary-tweaks
 ```
 
-- [x] **Go to `System Settings > Tweaks` and...**
-* In `Appearance/Window Controls/Layout` change to `Minimize Left`
+- [x] **Go to** `System Settings > Tweaks`
+* In `Appearance/Window Controls/Layout` change to **Minimize Left**
 * Turn **OFF** the setting `Files/Single click`
 * Turn **OFF** the setting `Terminal/Natural copy paste`
 * Turn **OFF** the setting `Terminal/Remember tabs`
