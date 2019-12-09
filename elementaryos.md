@@ -52,6 +52,28 @@ sudo apt install ubuntu-restricted-extras
 
 <br />
 
+- [x] **elementaryOS Tweaks**
+```
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks
+sudo apt-get update
+sudo apt-get install elementary-tweaks
+```
+
+- [x] **Go to `System Settings > Tweaks` and...**
+* In `Appearance/Window Controls/Layout` change to `Minimize Left`
+* Turn **OFF** the setting `Files/Single click`
+* Turn **OFF** the setting `Terminal/Natural copy paste`
+* Turn **OFF** the setting `Terminal/Remember tabs`
+
+<br />
+
+- [x] **Installed TLP package to Improve Battery Life**
+```
+sudo apt install tlp tlp-rdw
+```
+
+<br />
+
 ### Installing Apps
 
 - [x] **GParted** 
