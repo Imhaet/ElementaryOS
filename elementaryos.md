@@ -1,6 +1,6 @@
 ## FIRST THING FIRST
 
-This installation list is based on my preferences while trying out Elementary OS on my late 2008 macbook and is not a definitive procedure list. Feel free to use at your own peril.
+This installation list is based on my preferences while trying out Elementary OS on my late 2008 macbook and is not a definitive procedure. Feel free to use at your own peril.
 
 I want to acknowledge that this document is largely influenced by suberb's elementaryOS [post](https://gist.github.com/suberb/4635a6c338f0f66b63c0f502859e5b42).
 
