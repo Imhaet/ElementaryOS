@@ -119,7 +119,7 @@ sudo apt-get -f install
 
 There is an issue when suspending and subsequently resuming the machine: after waking up, the screen is still black and the only way to continue is to manually force the machine to turn off.
 
-This issue seems to be related to the Elementary's display manager and Nvidia drivers, since apparently it doesn't appear in Ubuntu (I have also tried Mint and Manjaro in the same machine and they both worked fine).
+This issue seems to be related to Elementary's display manager and Nvidia drivers, since apparently Ubuntu doesn't show the same problem (I have also tried Mint and Manjaro in the same machine and they both worked fine).
 
 Elementary uses **LightDM** as their display manager, while Ubutntu uses **GDM3**. Thus, a solution is to install GDM3 on the machine, which will solve the suspend/resume issue, albeit it will ruin elementary's slick new Greeter.
 
