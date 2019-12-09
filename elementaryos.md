@@ -127,7 +127,7 @@ I am using a late 2008 Macbook with the Nvidia GeForce 9400M, but [here](https:/
 
 <br />
 
-- [x] **Fixing the issue** According to this [post](https://askubuntu.com/questions/829108/what-is-gdm3-kdm-lightdm-how-to-install-and-remove-them)
+- [x] **Fixing the issue**
 
 * To install GNOME Display Manager (gdm3)
 ```
@@ -144,5 +144,7 @@ or `sudo dpkg-reconfigure lightdm` if mainly using LightDM.
 ```
 cat /etc/X11/default-display-manager
 ```
+
+A more complete explanation of the differences between dislpay managers and their installation can be found in this [post](https://askubuntu.com/questions/829108/what-is-gdm3-kdm-lightdm-how-to-install-and-remove-them). 
 
 <br />
