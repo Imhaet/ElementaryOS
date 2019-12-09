@@ -121,7 +121,7 @@ There is an issue when suspending and subsequently resuming the machine: after w
 
 This issue seems to be related to the Elementary's display manager and Nvidia drivers, since apparently it doesn't appear in Ubuntu (I have also tried Mint and Manjaro in the same machine and they both worked fine).
 
-Elementary uses LightDM as their display manager, while Ubutntu uses GDM3. Thus, a solution is to install GDM3 on the machine, which will solve the suspend/resume issue, albeit it will ruin elementary's slick new Greeter.
+Elementary uses **LightDM** as their display manager, while Ubutntu uses **GDM3**. Thus, a solution is to install GDM3 on the machine, which will solve the suspend/resume issue, albeit it will ruin elementary's slick new Greeter.
 
 I am using a late 2008 Macbook with the Nvidia GeForce 9400M, but [here](https://elementaryos.stackexchange.com/questions/20986/suspend-resume-issue) is another post with a similar machine experiencing the same issue.
 
@@ -138,10 +138,7 @@ sudo apt-get install gdm3
 ```
 sudo dpkg-reconfigure gdm3
 ```
-/or
-```
-sudo dpkg-reconfigure lightdm
-```
+or `sudo dpkg-reconfigure lightdm` if mainly using LightDM.
 
 * To check which display manager is currently being used, run this command:
 ```
