@@ -1,5 +1,15 @@
 ## FIRST THING FIRST
 
+This installation list is based on my preferences while trying out Elementary OS on my late 2008 macbook and is not a definitive procedure list. Feel free to use at your own peril.
+
+I want to acknowledge that this document is largely influenced by suberb's elementaryOS [post](https://gist.github.com/suberb/4635a6c338f0f66b63c0f502859e5b42).
+
+---
+
+<br />
+
+## WHILE IT'S STILL FRESH
+
 <br />
 
 - [x] **Update OS**
@@ -42,7 +52,7 @@ sudo apt install ubuntu-restricted-extras
 
 <br />
 
-### Install Apps
+### Installing Apps
 
 - [x] **GParted**
 ```
@@ -59,7 +69,7 @@ sudo apt-get install git
 sudo apt install vlc
 ```
 
-- [x] **Google Chromium**
+- [x] ~~**Google Chromium**~~
 ```
 sudo apt install chromium-browser
 ```
@@ -78,20 +88,20 @@ sudo apt install firefox
 <br />
 
 - [x] **Atom** [atom.io](https://atom.io)
-To install Atom on Debian, Ubuntu, or related distributions, add our official package repository to your system by running the following commands:
+* To install Atom on Debian, Ubuntu, or related distributions, add our official package repository to your system by running the following commands:
 ```
 wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 sudo apt-get update
 ```
-You can now install Atom using apt-get (or apt on Ubuntu):
+* You can now install Atom using apt-get (or apt on Ubuntu):
 ```
 # Install Atom
 sudo apt-get install atom
 # Install Atom Beta
 sudo apt-get install atom-beta
 ```
-Alternatively, you can download the Atom .deb package and install it directly:
+* Alternatively, you can download the Atom .deb package and install it directly:
 ```
 # Install Atom
 sudo dpkg -i atom-amd64.deb
@@ -108,19 +118,23 @@ sudo apt-get -f install
 <br />
 
 There is an issue when suspending and subsequently resuming: after waking up, the screen is still black and the only way to resume is to force the machine to turn off.
+
 This issue seems to be with the Elementary's display manager and Nvidia drivers, since apparently it doesn't appear in Ubuntu (I have also tried Mint and Manjaro in the same machine and they both worked fine).
+
 Elementary uses LightDM as their display manager, while Ubutntu uses GDM3. So one solution is to install GDM3 on the machine, which will solve the suspend/resume issue, albeit it will ruin elementary's slick new Greeter.
 
 I am using a late 2008 Macbook with the Nvidia GeForce 9400M, but [here](https://elementaryos.stackexchange.com/questions/20986/suspend-resume-issue) is another post with the same issue.
 
+<br />
+
 - [x] **Fixing the issue** According to this [post](https://askubuntu.com/questions/829108/what-is-gdm3-kdm-lightdm-how-to-install-and-remove-them)
 
-To install GNOME Display Manager (gdm3)
+* To install GNOME Display Manager (gdm3)
 ```
 sudo apt-get install gdm3
 ```
 
-If you have multiple display managers installed, you can choose between them using:
+* If you have multiple display managers installed, you can choose between them using:
 ```
 sudo dpkg-reconfigure gdm3
 ```
@@ -129,7 +143,9 @@ or
 sudo dpkg-reconfigure lightdm
 ```
 
-To check which display manager is currently being used, run this command:
+* To check which display manager is currently being used, run this command:
 ```
 cat /etc/X11/default-display-manager
 ```
+
+<br />
