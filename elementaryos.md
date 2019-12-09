@@ -54,9 +54,9 @@ sudo apt install ubuntu-restricted-extras
 
 ### Installing Apps
 
-- [x] **GParted**
+- [x] **GParted** 
 ```
-GPARTED?
+sudo apt-get install gparted
 ```
 
 - [x] **GIT**
@@ -123,7 +123,7 @@ This issue seems to be related to the Elementary's display manager and Nvidia dr
 
 Elementary uses LightDM as their display manager, while Ubutntu uses GDM3. Thus, a solution is to install GDM3 on the machine, which will solve the suspend/resume issue, albeit it will ruin elementary's slick new Greeter.
 
-I am using a late 2008 Macbook with the Nvidia GeForce 9400M, but [here](https://elementaryos.stackexchange.com/questions/20986/suspend-resume-issue) is another post with a similar machine with the same issue.
+I am using a late 2008 Macbook with the Nvidia GeForce 9400M, but [here](https://elementaryos.stackexchange.com/questions/20986/suspend-resume-issue) is another post with a similar machine experiencing the same issue.
 
 <br />
 
@@ -138,7 +138,7 @@ sudo apt-get install gdm3
 ```
 sudo dpkg-reconfigure gdm3
 ```
-or
+/or
 ```
 sudo dpkg-reconfigure lightdm
 ```
